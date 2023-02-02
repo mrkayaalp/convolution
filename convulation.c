@@ -8,7 +8,6 @@ void konvolusyon(int matris[][100], int filtre[][100], int sonuc[][100], int M, 
                 for(int b=0; b<k; b++){
                     toplam += filtre[a][b] * matris[i+a][j+b];
                 }
-                
             }
         sonuc[i][j] = toplam;
         }
@@ -51,6 +50,10 @@ int main(){
         }
     }
     matris_yazdir(matris, k, k);
+
+    konvolusyon(matris, filtre, sonuc, M, N, k);
+    printf("konvolusyon sonucu:\n ");
     
+    matris_yazdir(sonuc, (M-k+1), (N-k+1));
 
 }
