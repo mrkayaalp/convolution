@@ -32,7 +32,7 @@ int main(){
     int matris[100][100];
     int M, N, k;
 
-    printf("Matrisin boyutunu giriiniz (MxN)");
+    printf("Matrisin boyutunu giriniz (MxN)");
     scanf("%d%d", &M, &N);
     printf("Matrisin elemanlarini giriniz: \n");
     for(int i=0; i<M; i++){
@@ -41,4 +41,16 @@ int main(){
         }
     }
     matris_yazdir(matris, M, N);
+
+     printf("Filtre matrisinin boyutunu giriiniz (kxk)");
+    scanf("%d", &k);
+    printf("Matrisin elemanlarini giriniz: \n");
+    for(int i=0; i<k; i++){
+        for(int j=0; j<k; j++){
+            scanf("%d", &matris[i][j]); 
+        }
+    }
+    matris_yazdir(matris, k, k);
+    
+
 }
