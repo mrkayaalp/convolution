@@ -14,8 +14,15 @@ void konvolusyon(int matris[][100], int filtre[][100], int sonuc[][100], int M, 
         }
     }
 }
-
-
+void matris_yazdir(int matris[][100], int n){
+     for(int i=0; i<n; i++){
+        printf("[");
+        for(int j=0; j<n; j++){
+            printf("%d", matris[i][j]); 
+        }
+        printf("]\n");
+    }
+}
 int main(){
 
 
