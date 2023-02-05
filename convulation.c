@@ -54,6 +54,7 @@ int main(){
 
     konvolusyon(matris, filtre, sonuc, M, N, k);
     printf("konvolusyon sonucu:\n ");
+    printf("\n");
     matris_yazdir(sonuc, (M-k+1), (N-k+1));
 
 } 
